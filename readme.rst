@@ -1,71 +1,46 @@
 ###################
-What is CodeIgniter
+CodeIgniter and MariaDB project
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+
+This is a web application built using CodeIgniter and MariaDB. It allows users to create orders and products, as well as edit existing ones. The code is not fully tested and some changes to the database may be necessary.
 
 *******************
-Release Information
-*******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
 Installation
-************
+*******************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+To install the application, follow these steps:
 
-*******
+1. Run the init.sql file to create the database.
+2. Copy the application files to your web server.
+3. Modify the database.php file to connect to your database.
+4. Run the application in your web browser.
+
+*******************
+Usage
+*******************
+The application allows users to create orders and products, as well as edit existing ones. Users can also alter permissions in the alter user table.
+
+*******************
+Security
+*******************
+The application does not currently have access tokens or other security measures. Some security features may be implemented in the future.
+
+*******************
+To-do
+*******************
+Some possible improvements for the application include:
+
+1. Standardizing layout/routes/structure.
+2. Implementing Docker.
+3. Adding security measures.
+
+*******************
+Notes
+*******************
+This project was created as a case study and exam, and as such, we approached the same problems from various angles. Some functions that could be the same are made in two different ways, first for study purposes, second to demonstrate, and third to measure performance. As a result, there may be some inconsistency in the code. Additionally, there are some errors in the frontend that will be corrected in the future.
+
+*******************
 License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+*******************
+This project is licensed under the MIT license. Feel free to use anything that you need without any problems
