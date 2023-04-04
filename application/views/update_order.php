@@ -9,7 +9,6 @@ if (isset($data)) {
     $suppliers = $data['suppliers'];
     $products = $data['products'];
 }
-var_dump($this->session->userdata());
 ?>
 
 <!DOCTYPE html>

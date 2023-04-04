@@ -1,3 +1,13 @@
+CREATE DATABASE IF NOT EXISTS many_minds;
+
+USE many_minds;
+
+ALTER USER 'admin'@'%' IDENTIFIED BY 'new_password123';
+
+GRANT ALL PRIVILEGES ON many_minds.* TO 'admin'@'%';
+
+FLUSH PRIVILEGES;
+
 CREATE TABLE users (
   user_id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(255) NOT NULL,
@@ -25,6 +35,7 @@ CREATE TABLE collaborators (
   phone VARCHAR(20) NOT NULL,
   user_id INT NOT NULL,
   active BOOLEAN NOT NULL,
+  address_id INT NOT NULL,
   PRIMARY KEY (collaborator_id),
   FOREIGN KEY (address_id) REFERENCES addresses(address_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id)

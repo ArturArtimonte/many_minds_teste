@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: many_minds
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password123
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./docker-files:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+  web:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./:/var/www/html:Z
+

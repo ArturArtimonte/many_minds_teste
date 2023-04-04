@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'db',
 	'username' => 'admin',
-	'password' => 'password123',
+	'password' => 'new_password123',
 	'database' => 'many_minds',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
