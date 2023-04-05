@@ -1,4 +1,6 @@
-/data
-/htdocs
-/html-example
-/application/logs
+data/
+htdocs/
+html-example/
+application/logs
+
+*.log
