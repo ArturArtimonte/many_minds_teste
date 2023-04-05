@@ -11,10 +11,9 @@ Installation
 
 To install the application, follow these steps:
 
-1. Run the init.sql file to create the database.
-2. Copy the application files to your web server.
-3. Modify the database.php file to connect to your database.
-4. Run the application in your web browser.
+1. Run docker compose up on the root of the project
+2. credentials for database are user:root pass:rootpassword
+3. access using localhost
 
 *******************
 Usage
