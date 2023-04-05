@@ -1,4 +1,4 @@
-data/
+data/**
 htdocs/
 html-example/
 application/logs

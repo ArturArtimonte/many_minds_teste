@@ -29,16 +29,33 @@ The application does not currently have access tokens or other security measures
 *******************
 To-do
 *******************
-Some possible improvements for the application include:
+*** Some possible improvements for the application include: ***
 
 1. Standardizing layout/routes/structure.
-2. Implementing Docker.
+2. Implementing Docker. /// DONE
 3. Adding security measures.
+
+*** Features ***
+
+1. Add validation to prevent users from creating an order without any products. An alert message could be displayed asking the user to create a product on the /orders page.
+2. Fix the Home button on the /orders page to redirect to the correct route.
+3. Add maximum character limit validation to all input fields throughout the system to prevent layout issues on subsequent pages.
+4. Add a "Back to Home" button on all pages to make the system more user-friendly.
+5. Fix the /alter_collaborator page to correctly edit collaborator information.
+6. Improve field validation on the /create_colab and /alter_collaborator pages.
+7. Add inventory quantity validation when creating a new order.
 
 *******************
 Notes
 *******************
 This project was created as a case study and exam, and as such, we approached the same problems from various angles. Some functions that could be the same are made in two different ways, first for study purposes, second to demonstrate, and third to measure performance. As a result, there may be some inconsistency in the code. Additionally, there are some errors in the frontend that will be corrected in the future.
+
+*******************
+Bug Fixes:
+*******************
+
+1. The Home button on the /orders page does not redirect to the correct route.
+2. The /alter_collaborator page is not correctly editing collaborator information.
 
 *******************
 License
