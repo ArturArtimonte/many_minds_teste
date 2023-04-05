@@ -29,13 +29,13 @@ The application does not currently have access tokens or other security measures
 *******************
 To-do
 *******************
-*** Some possible improvements for the application include: ***
+** Some possible improvements for the application include: **
 
 1. Standardizing layout/routes/structure.
 2. Implementing Docker. /// DONE
 3. Adding security measures.
 
-*** Features ***
+** Features **
 
 1. Add validation to prevent users from creating an order without any products. An alert message could be displayed asking the user to create a product on the /orders page.
 2. Fix the Home button on the /orders page to redirect to the correct route.
