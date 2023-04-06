@@ -11,8 +11,8 @@ Installation
 
 To install the application, follow these steps:
 
-1. Run docker compose up on the root of the project
-2. credentials for database are user:root pass:rootpassword
+1. Run **docker compose up** on the root of the project
+2. credentials for database are user: **root** pass: **rootpassword**
 3. access using localhost
 
 *******************
@@ -31,13 +31,13 @@ To-do
 **Some possible improvements for the application include:**
 
 1. Standardizing layout/routes/structure.
-2. Implementing Docker. /// DONE
+2. Implementing Docker. |||| **DONE**
 3. Adding security measures.
 
 **Features**
 
 1. Add validation to prevent users from creating an order without any products. An alert message could be displayed asking the user to create a product on the /orders page.
-2. Fix the Home button on the /orders page to redirect to the correct route.
+2. Fix the Home button on the /orders page to redirect to the correct route. ||| **DONE**
 3. Add maximum character limit validation to all input fields throughout the system to prevent layout issues on subsequent pages.
 4. Add a "Back to Home" button on all pages to make the system more user-friendly.
 5. Fix the /alter_collaborator page to correctly edit collaborator information.
@@ -53,7 +53,6 @@ This project was created as a case study and exam, and as such, we approached th
 Bug Fixes:
 *******************
 
-1. The Home button on the /orders page does not redirect to the correct route.
 2. The /alter_collaborator page is not correctly editing collaborator information.
 
 *******************

@@ -116,7 +116,7 @@ $this->load->library('session');
 				<a href="<?php echo site_url('/create_order') ?>" class="button">Create Order</a>
 			<?php endif; ?>
 		</main>
-		<a href="<?php echo site_url('/homepage') ?> class=" button"">Home</a>
+		<a href="<?php echo site_url('/homepage') ?>" class=" button">Home</a>
 	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script>

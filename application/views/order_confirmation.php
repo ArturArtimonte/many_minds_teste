@@ -9,4 +9,5 @@
 	<p>Order ID: <?php echo $order_id; ?></p>
 	<p>Thank you for your purchase!</p>
 </body>
+<a href="<?php echo site_url('/homepage') ?>" class=" button">Home</a>
 </html>
